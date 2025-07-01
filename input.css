@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+  /* @font-face {
+    font-family: 'MyFont';
+    src: url('fonts/YourFontName.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+   @font-face {
+      font-family: 'Roboto';
+      src: url('fonts/static/Inconsolata-Medium.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Regular';
+      src: url('fonts/static/Inconsolata-Regular.ttf') format('truetype');
+    }
+    h1{
+        font-family: 'Roboto', sans-serif;
+    }
+    h5{
+        font-family: 'Regular', sans-serif;
+    }
