@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+     <link href="./output.css" rel="stylesheet">
+     <link rel="stylesheet" href="input.css">
+</head>
+<body class="h-screen w-screen overflow-x-hidden">
+<main class="relative h-[161vh] w-[101vw] bg-[url('images/background-desktop.png')] bg-contain bg-top-left bg-no-repeat overflow-hidden">
+    <div class="circle absolute left-12 -top-20 rotate-225 h-[250px] w-[250px] bg-[url('images/pattern-circle.svg')] bg-contain bg-no-repeat"></div>
+        <div class="circle absolute left-[60%] top-[55%] h-[250px] w-[250px] bg-[url('images/pattern-circle.svg')] bg-contain bg-no-repeat"></div>
+            <div class="absolute right-8 top-20 h-[400px] w-[400px] bg-[url('images/pattern-squiggly-line-top.svg')] bg-contain bg-no-repeat"></div>
+                <div class="absolute -left-15 top-[59%] h-[1000px] w-[1000px] bg-[url('images/pattern-squiggly-line-bottom-desktop.svg')] bg-contain bg-no-repeat"></div>
+<div class="h-full w-full bgLines bg-[url('images/pattern-lines.svg')] bg-cover bg-top bg-no-repeat absolute z-50">
+
+    <div class="logo w-full pt-10 flex justify-center">
+        <img class="scale-[1.1]" src="images/logo-full.svg" alt="">
+    </div>
+
+   <div class="heading flex flex-col items-center">
+     <h1 class="text-white text-6xl font-bold mt-15 w-[900px] leading-16 text-center">Your Journey to Coding Conf 2025 Starts Here!</h1>
+     <h5 class="text-gray-300 text-[26px] leading-14">Secure your spot at next year's biggest coding conference.</h5>
+   </div>
+
+  <div class="conatiner w-full min-h-[400px] flex justify-center">
+     <form action="/" class=" w-[550px] p-5">
+        <h6 class="mt-3 mb-2 text-[#fefefe] text-xl">Upload Avatar</h6>
+    <label for="file" class="text-white border-2 border-dashed border-gray-500 rounded-2xl h-[160px] w-full flex flex-col items-center justify-center cursor-pointer bg-[#20283090]">
+        <input type="file" id="file" name="file" accept="image/*" class="text-white hidden">
+        <div class="image h-[60px] w-[60px] bg-[url(images/icon-upload.svg)] bg-cover bg-no-repeat border-2 border-gray-800 bg-[#20283090] rounded-xl"></div>
+        <h3 class="text-[1.3pc] text-gray-400 font-medium mt-4">Drag and drop or click to upload</h3>
+    </label>
+    <span class="file text-gray-400 block mt-1 ml-2">◎Upload your photo (JPG or PNG, max size: 500kb)</span>
+
+    <label for="name" class="name text-[#efefef] ml-2 block mt-4 text-xl">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-4 focus:outline-none focus:border-blue-800"/>
+
+    <label for="email" class="email text-[#efefef] ml-2 block mt-4 text-xl">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Example@gmail.com" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-4 focus:outline-none focus:border-blue-800"/>
+
+        
+        <label for="github" class="github text-[#efefef] ml-2 block mt-4 text-xl">GitHub Username</label>
+    <input type="text" id="github" name="github" placeholder="@yourusername" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-4 focus:outline-none focus:border-blue-800"> 
+
+    <button type="submit" class="submit h-[50px] w-full bg-orange-500 text-xl font-semibold rounded-2xl mt-4 cursor-pointer">Generate My Ticket</button>
+
+   </form>
+  </div>
+  <span class="outro block w-full text-white text-xl absolute bottom-2 text-center">Made with ❤️by Devendra Nath Limbu</span>
+</div>
+</main>  
+  
+
+    <script src="app.js"></script>
+</body>
+</html>
