@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="input.css">
 </head>
 <body class="h-screen w-screen overflow-x-hidden">
-<main class="relative h-[120vh] sm:h-[140vh] md:h-[150vh] w-[100vw] md:w-[101vw] bg-[url('images/background-mobile.png')]  md:bg-[url('images/background-desktop.png')] bg-cover bg-center md:bg-top-left bg-no-repeat overflow-hidden">
+<main class="relative h-[120vh] sm:h-[140vh] md:h-[160vh] w-[100vw] md:w-[101vw] bg-[url('images/background-mobile.png')]  md:bg-[url('images/background-desktop.png')] bg-cover bg-center md:bg-top-left bg-no-repeat overflow-hidden">
     <div class="circle absolute left-12 -top-20 rotate-225 h-[250px] w-[250px] md:bg-[url('images/pattern-circle.svg')] bg-contain bg-no-repeat md:block hidden"></div>
         <div class="circle absolute left-[60%] top-[55%] h-[250px] w-[250px] bg-[url('images/pattern-circle.svg')] bg-contain bg-no-repeat"></div>
             <div class="absolute right-0  top-3 sm:right-4 md:right-8 sm:top-0 md:top-20 h-[150px] w-[150px] sm:h-[250px] md:h-[400px] sm:w-[250px] md:w-[400px] bg-[url('images/pattern-squiggly-line-top.svg')] md:bg-[url('images/pattern-squiggly-line-top.svg')] bg-contain bg-no-repeat"></div>
@@ -27,28 +27,33 @@
   <div class="conatiner w-full min-h-[400px] flex justify-center">
      <form action="/" class=" w-[550px] p-5">
         <h6 class="mt-3 mb-2 text-[#fefefe] text-xl">Upload Avatar</h6>
-    <label for="file" class="text-white border-2 border-dashed border-gray-500 rounded-2xl h-[160px] w-full flex flex-col items-center justify-center cursor-pointer bg-[#20283090]">
+    <label for="file" class="relative text-white border-2 border-dashed border-gray-500 rounded-2xl h-[160px] w-full flex flex-col items-center justify-center cursor-pointer bg-[#20283090] hover:bg-[#33332a50]">
         <input type="file" id="file" name="file" accept="image/*" class="text-white hidden">
         <div class="image h-[60px] w-[60px] bg-[url(images/icon-upload.svg)] bg-cover bg-no-repeat border-2 border-gray-800 bg-[#20283090] rounded-xl"></div>
-        <h3 class="text-[1.2pc] sm:text-[1.3pc] md:text-[1.3pc] text-gray-400 font-medium mt-4">Drag and drop or click to upload</h3>
+        <h3 class="info text-[1.2pc] sm:text-[1.3pc] md:text-[1.3pc] text-gray-400 font-medium mt-4">Drag and drop or click to upload</h3>
+        <div class="clkBtn hidden absolute bottom-4 w-full justify-center gap-3">
+            <button class="text-xl text-gray-400 bg-[#25303090] p-1 px-2 rounded-lg cursor-pointer">remove image</button>
+            <button class="text-xl text-gray-400 bg-[#25303090] p-1 px-2 rounded-lg cursor-pointer">change image</button>
+        </div>
     </label>
-    <span class="file text-gray-400 block mt-1 ml-2">◎Upload your photo (JPG or PNG, max size: 500kb)</span>
+    <span class="file text-gray-400 text-[0.8pc] sm:text-[1pc] md:text-[1pc] block mt-1 ml-2">◎Upload your photo (JPG or PNG, max size: 500kb)</span>
 
     <label for="name" class="name text-[#efefef] ml-2 block mt-4 text-xl">Full Name</label>
     <input type="text" id="name" name="name" placeholder="" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-4 focus:outline-none focus:border-blue-800"/>
 
     <label for="email" class="email text-[#efefef] ml-2 block mt-4 text-xl">Email Address</label>
-    <input type="email" id="email" name="email" placeholder="Example@gmail.com" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-4 focus:outline-none focus:border-blue-800"/>
+    <input type="email" id="email" name="email" placeholder="Example@gmail.com" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-2 focus:outline-none focus:border-blue-800"/>
+    <span class="mail text-gray-400 text-[0.8pc] sm:text-[1pc] md:text-[1pc] block mt-0 ml-2">◎Please enter a valid email address.</span>
 
         
         <label for="github" class="github text-[#efefef] ml-2 block mt-4 text-xl">GitHub Username</label>
     <input type="text" id="github" name="github" placeholder="@yourusername" class="w-full h-[50px] rounded-2xl bg-[#20283090] border-2 border-gray-600 text-white px-4 mt-1 mb-4 focus:outline-none focus:border-blue-800"> 
 
-    <button type="submit" class="submit h-[50px] w-full bg-orange-500 text-xl font-semibold rounded-2xl mt-4 cursor-pointer">Generate My Ticket</button>
+    <button type="submit" class="btn submit h-[50px] w-full bg-orange-500 text-xl font-semibold rounded-2xl mt-4 cursor-pointer">Generate My Ticket</button>
 
    </form>
   </div>
-  <span class="outro block w-full text-white text-lg md:text-xl absolute bottom-2 text-center">Made with ❤️by Devendra Nath Limbu</span>
+  <span class="outro block w-full text-white text-lg md:text-xl absolute bottom-2 text-center">Made with ❤️By Devendra Nath Limbu</span>
 </div>
 </main>  
   
